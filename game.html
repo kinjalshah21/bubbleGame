@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <link rel="icon" href= "https://images.pexels.com/photos/35016/soap-bubble-colorful-ball-soapy-water.jpg?auto=compress&cs=tinysrgb&w=600" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body class="bg-[#9F86C0] h-screen w-screen overflow-hidden flex items-center justify-center">
+    <!-- main div starts here  -->
+    <div class="w-3/4 h-4/5 md:mt-8 bg-white rounded-xl overflow-hidden border-2 border-[#231942]">
+
+        <!-- upper-panel starts from here  -->
+        <div class="w-full h-20 bg-[#E0B1CB] flex items-center justify-center space-x-8 border-b-2 border-[#231942]">
+
+            <div class="h-10 flex items-center space-x-2">
+                <h2 class="font-semibold text-xl">Hit</h2>
+                <div id="hit-val"
+                    class="w-10 h-10 bg-[#231942] rounded-md text-white flex items-center justify-center font-mono font-medium text-xl ">
+                    3</div>
+            </div>
+            <div class="h-10 flex items-center space-x-2">
+                <h2 class="font-semibold text-xl">Score</h2>
+                <div id="score-val"
+                    class="w-10 h-10 bg-[#231942] rounded-md text-white flex items-center justify-center font-mono font-medium text-xl">
+                    0</div>
+            </div>
+            <div class="h-10 flex items-center space-x-2">
+                <h2 class="font-semibold text-xl">Timer</h2>
+                <div id="time-val"
+                    class="w-10 h-10 bg-[#231942] rounded-md text-white flex items-center justify-center font-mono font-medium text-xl">
+                    60</div>
+            </div>
+        </div>
+        <!-- upper-panel ends here  -->
+
+        <!-- bottom panel starts here  -->
+        <div id="panel-bottom"  class="w-full h-full p-2 flex gap-3 flex-wrap pb-8 pl-4 ">
+        </div>
+        <!-- bottom panel ends here  -->
+    </div>
+    <!-- main div ends here  -->
+    <script src="./dist/script.js"></script>
+</body>
+
+</html>

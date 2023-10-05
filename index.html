@@ -6,44 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubble Game</title>
     <link rel="icon" href= "https://images.pexels.com/photos/35016/soap-bubble-colorful-ball-soapy-water.jpg?auto=compress&cs=tinysrgb&w=600" type="image/x-icon">
-    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="./dist/output.css">
 </head>
 
-<body class="bg-[#9F86C0] h-screen w-screen overflow-hidden flex items-center justify-center">
-    <!-- main div starts here  -->
-    <div class="w-3/4 h-4/5 md:mt-8 bg-white rounded-xl overflow-hidden border-2 border-[#231942]">
+<body class="bg-[#9F86C0] h-screen flex items-center justify-center ">
 
-        <!-- upper-panel starts from here  -->
-        <div class="w-full h-20 bg-[#E0B1CB] flex items-center justify-center space-x-8 border-b-2 border-[#231942]">
-
-            <div class="h-10 flex items-center space-x-2">
-                <h2 class="font-semibold text-xl">Hit</h2>
-                <div id="hit-val"
-                    class="w-10 h-10 bg-[#231942] rounded-md text-white flex items-center justify-center font-mono font-medium text-xl ">
-                    3</div>
+    <div class="w-2/4 md:h-3/4  bg-[#9F86C0] overflow-hidden rounded-xl border-4 border-[#231942]">
+        <div class="bg-[#231942] h-20 flex items-center justify-center">
+            <h1 class="text-white text-3xl">Bubble Game</h1>
+        </div>
+        <div class="p-12">
+            <div class="hidden md:block">
+                <h1 class="p-1 text-xl text-center mb-2 font-medium tracking-wide">How to play?</h1>
+                <h4 class="p-1 text-base font-medium tracking-wide">1. Click the bubble with the value matching the Hit
+                    value.</h4>
+                <h4 class="p-1 text-base font-medium tracking-wide">2. You have 60 seconds to maximize your score.</h4>
+                <h4 class="p-1 text-base  font-medium tracking-wide">3. Every successful hit will increase your score by
+                    10 and timer by 1.</h4>
+                <h4 class="p-1 text-base font-medium tracking-wide">4. Every unsuccessful hit will take 1 point from
+                    you.</h4>
+                <h4 class="p-1 text-base  font-medium tracking-wide">5. Points less than -5 will take you out of the game.</h4>    
             </div>
-            <div class="h-10 flex items-center space-x-2">
-                <h2 class="font-semibold text-xl">Score</h2>
-                <div id="score-val"
-                    class="w-10 h-10 bg-[#231942] rounded-md text-white flex items-center justify-center font-mono font-medium text-xl">
-                    0</div>
-            </div>
-            <div class="h-10 flex items-center space-x-2">
-                <h2 class="font-semibold text-xl">Timer</h2>
-                <div id="time-val"
-                    class="w-10 h-10 bg-[#231942] rounded-md text-white flex items-center justify-center font-mono font-medium text-xl">
-                    60</div>
+            <div class="flex items-center justify-center">
+                <button class="bg-[#231942] text-white px-4 py-2 rounded-md font-medium mt-4"
+                 onclick="window.location.href = './game.html'">Play</button>
             </div>
         </div>
-        <!-- upper-panel ends here  -->
-
-        <!-- bottom panel starts here  -->
-        <div id="panel-bottom"  class="w-full h-full p-2 flex gap-3 flex-wrap pb-8 pl-4 ">
-        </div>
-        <!-- bottom panel ends here  -->
     </div>
-    <!-- main div ends here  -->
-    <script src="./dist/script.js"></script>
+
+    <script src="./dist/first.js"></script>
 </body>
 
 </html>
